@@ -1,0 +1,25 @@
+#!/bin/sh
+
+echo Java・ビルドツールインストール
+brew cask install java6
+brew install maven2
+brew install ant
+
+#JAVA_HOME指定
+echo JAVA_HOME指定
+echo export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/ >> ~/.bash_profile
+
+source ~/.bash_profile
+
+#Install Java7 for Eclipse
+wget -P ~/Downloads/ --no-check-certificate --no-cookies - --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u71-b14/jdk-7u71-macosx-x64.dmg
+hdiutil mount ~/Downloads/jdk-7u71-macosx-x64.dmg
+sudo installer -pkg /Volumes/JDK\ 7\ Update\ 71/JDK\ 7\ Update\ 71.pkg -target /
+hdiutil unmount /Volumes/JDK\ 7\ Update\ 71/
+
+#eclipse設定変更
+#先頭に以下を追記
+#-vm
+#/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java
+sed -e "1i /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
+sed -e "1i -vm" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
