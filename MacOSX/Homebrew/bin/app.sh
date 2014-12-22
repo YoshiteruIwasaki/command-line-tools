@@ -2,10 +2,10 @@
 
 echo アプリケーションをインストール
 brew cask install google-chrome
-brew cask edit firefox
 echo 日本語対応設定
 echo -  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US'
 echo +  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=ja-JP-mac'
+brew cask edit firefox
 brew cask install firefox
 brew cask install google-japanese-ime
 brew cask install pgadmin3
