@@ -13,7 +13,7 @@ brew cask install mysqlworkbench
 brew cask install eclipse-ide
 brew cask install cyberduck
 brew cask install coteditor
-brew cask install libreoffice
+#brew cask install libreoffice
 brew cask install virtualbox
 brew install android-sdk
 brew install app-engine-java-sdk
