@@ -15,12 +15,14 @@ sudo echo -javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.me
 
 #EclipseへTomcatプラグインインストール
 wget -P ~/Downloads/ http://www.eclipsetotale.com/tomcatPlugin/tomcatPluginV331.zip
-unzip ~/Downloads/tomcatPluginV331.zip
+cd ~/Downloads/
+unzip tomcatPluginV331.zip
 sudo cp ~/Downloads/com.sysdeo.eclipse.tomcat_3.3.1.jar /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/dropins/
 
 #EclipseへVelocityWebEditプラグインインストール
-wget  -P ~/Downloads/ "http://downloads.sourceforge.net/project/velocitywebedit/velocitywebedit/1.0.8/VelocityWebEdit-1.0.8.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fvelocitywebedit%2Ffiles%2F&ts=1417588154&use_mirror=jaist"
-unzip ~/Downloads/VelocityWebEdit-1.0.8.zip
+wget  -P ~/Downloads/ "http://downloads.sourceforge.net/project/velocitywebedit/velocitywebedit/1.0.8/VelocityWebEdit-1.0.8.zip"
+cd ~/Downloads/
+unzip VelocityWebEdit-1.0.8.zip
 sudo cp -r ~/Downloads/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/plugins/
 
 echo Eclipseからアップデートサイトを設定する形で以下をインストールしてください
