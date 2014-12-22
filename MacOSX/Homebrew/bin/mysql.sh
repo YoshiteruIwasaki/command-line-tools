@@ -9,4 +9,4 @@ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 #パスワード設定
 echo パスワードを設定してください
-mysql_secure_installation
+sudo mysql_secure_installation
