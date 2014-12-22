@@ -2,7 +2,8 @@
 
 echo setup eclipse
 wget -P ~/Downloads/ http://ftp.jaist.ac.jp/pub/mergedoc/pleiades/4.4/pleiades-e4.4-ultimate_20140926.zip
-unzip ~/Downloads/pleiades-e4.4-ultimate_20140926.zip
+cd ~/Downloads/
+unzip pleiades-e4.4-ultimate_20140926.zip
 sudo cp -r ~/Downloads/pleiades/eclipse/dropins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/dropins/
 sudo cp -r ~/Downloads/pleiades/eclipse/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/plugins/
 sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/features/
