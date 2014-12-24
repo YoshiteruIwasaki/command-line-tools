@@ -10,6 +10,6 @@ brew update
 
 #インストール先指定
 echo インストール先指定
-echo export HOMEBREW_CASK_OPTS="--appdir=/Applications" >> ~/.bash_profile
+echo export HOMEBREW_CASK_OPTS=¥"--appdir=/Applications¥" >> ~/.bash_profile
 
 source ~/.bash_profile
