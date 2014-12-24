@@ -4,6 +4,7 @@ echo Install postgresql
 brew rm postgresql --force
 brew install postgresql
 #自動起動設定
+mkdir -p ~/Library/LaunchAgents
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 #ユーザー作成
