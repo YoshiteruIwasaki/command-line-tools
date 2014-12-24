@@ -7,7 +7,8 @@ brew install ant
 
 #JAVA_HOME指定
 echo JAVA_HOME指定
-echo export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/ >> ~/.bash_profile
+echo export JAVA_HOME=`/usr/libexec/java_home -v "1.6"`  >> ~/.bash_profile
+echo PATH=${JAVA_HOME}/bin:${PATH}  >> ~/.bash_profile
 
 source ~/.bash_profile
 
