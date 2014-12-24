@@ -12,4 +12,7 @@ echo ユーザーを作成します。パスワードを設定してください
 createuser -s -P postgres
 #データベース作成
 echo データベースを作成します
+#PostgreSQL9.3の場合
 create database org001 owner postgres encoding 'UTF8';
+#PostgreSQL9.4の場合
+createdb org001 owner postgres encoding 'UTF8';
