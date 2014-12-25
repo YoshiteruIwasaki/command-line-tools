@@ -8,7 +8,7 @@ mkdir -p ~/Library/LaunchAgents
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 #ユーザー作成
-echo ユーザーを作成します。パスワードを設定してください
+echo ユーザーを作成します。パスワード（aipo）を設定してください
 createuser -s -P postgres
 #データベース作成
 echo データベースを作成します
