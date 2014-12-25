@@ -5,6 +5,8 @@ brew cask install java6
 brew install maven2
 brew install ant
 
+touch ~/.bash_profile
+
 #JAVA_HOME指定
 echo JAVA_HOME指定
 echo export JAVA_HOME=`/usr/libexec/java_home -v "1.6"`  >> ~/.bash_profile
@@ -22,5 +24,5 @@ hdiutil unmount /Volumes/JDK\ 7\ Update\ 71/
 #先頭に以下を追記
 #-vm
 #/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java
-sed -e "1i /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
-sed -e "1i -vm" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
+sed -e "1i /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java" /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
+sed -e "1i -vm" /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
