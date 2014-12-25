@@ -19,6 +19,7 @@ brew install android-sdk
 brew install app-engine-java-sdk
 brew install wget
 
+touch ~/.bash_profile
 #ANDROID_HOME先指定
 echo ANDROID_HOME先指定
 echo export ANDROID_HOME=/usr/local/opt/android-sdk >> ~/.bash_profile
