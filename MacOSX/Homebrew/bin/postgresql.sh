@@ -15,4 +15,4 @@ echo データベースを作成します
 #PostgreSQL9.3の場合
 create database org001 owner postgres encoding 'UTF8';
 #PostgreSQL9.4の場合
-createdb org001 owner postgres encoding 'UTF8';
+createdb -E UTF8 -O postgres -U postgres org001;
