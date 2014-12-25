@@ -22,5 +22,5 @@ hdiutil unmount /Volumes/JDK\ 7\ Update\ 71/
 #先頭に以下を追記
 #-vm
 #/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java
-sed -e "1i /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
-sed -e "1i -vm" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.0/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
+sed -e "1i /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
+sed -e "1i -vm" /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini
