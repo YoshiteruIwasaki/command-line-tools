@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Change Permission
+chmod 744 ./bin/*.sh
+
 # Install Command Line Tools
 ./bin/command-line-tools.sh
 
