@@ -1,5 +1,18 @@
 #!/bin/sh
 
+echo install eclipse
+brew cask install eclipse-ide
+brew cask info eclipse-ide
+
+#eclipse設定変更
+echo 先頭に以下を追記
+echo -vm
+echo /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java
+JAVA_HOME_7=/usr/libexec/java_home -v "1.7"
+sed -e "1i ${JAVA_HOME_7}/bin/java" /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
+sed -e "1i -vm" /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
+
+
 echo setup eclipse
 wget -P ~/Downloads/ http://ftp.jaist.ac.jp/pub/mergedoc/pleiades/4.4/pleiades-e4.4-ultimate_20140926.zip
 cd ~/Downloads/

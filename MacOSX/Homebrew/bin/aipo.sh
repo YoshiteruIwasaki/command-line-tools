@@ -9,5 +9,11 @@ echo clone aipo
 cd ~/Documents/aipo/GitHub
 git clone https://github.com/aipocom/aipo.git
 
-echo setup aipo database
+#データベース作成
+echo データベースを作成します
+#PostgreSQL9.3の場合
+create database org001 owner postgres encoding 'UTF8';
+#PostgreSQL9.4の場合
+createdb -E UTF8 -O postgres -U postgres org001;
+
 psql -Upostgres -d org001 < ~/Documents/aipo/GitHub/aipo/sql/postgres/org001.sql
