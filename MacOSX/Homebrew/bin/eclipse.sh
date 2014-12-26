@@ -35,3 +35,10 @@ echo http://slim3.googlecode.com/svn/updates/
 echo
 echo AWS Toolkit for Eclipse
 echo http://aws.amazon.com/jp/eclipse
+echo
+echo StartExplorer Eclipse Plug-in
+echo http://basti1302.github.com/startexplorer/update/
+
+
+
+
