@@ -38,7 +38,38 @@ echo http://aws.amazon.com/jp/eclipse
 echo
 echo StartExplorer Eclipse Plug-in
 echo http://basti1302.github.com/startexplorer/update/
-
-
-
+echo
+echo =============================
+echo Eclipseの環境設定を行ってください
+echo Git
+echo デフォルトリポジトリフォルダ
+echo $HOME/Documents/aipo/GitHub
+echo =============================
+echo Java
+echo インストール済みのJRE
+echo Java SE6
+echo
+echo コンパイラ
+echo 1.6
+echo =============================
+echo Tomcat
+echo バージョン
+echo バージョン6.x
+echo
+echo Tomcatホーム
+echo /usr/local/opt/tomcat6/libexec
+echo
+echo JVM設定
+echo Java SE6
+echo
+echo JVMパラメータ
+echo -XX:MaxPermSize=128m -Xmx512m -Xms256m -Dsun.nio.cs.map=x-windows-iso2022jp/ISO-2022-JP
+echo =============================
+echo Android
+echo SDKロケーション
+echo /usr/local/opt/android-sdk
+echo =============================
+echo Google
+echo Appエンジン
+echo /usr/local/opt/app-engine-java-sdk/libexec
 
