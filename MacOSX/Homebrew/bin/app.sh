@@ -23,6 +23,8 @@ echo install android-sdk
 brew install android-sdk
 echo install app-engine-java-sdk
 brew install app-engine-java-sdk
+echo install sophos-anti-virus-home-edition
+brew cask install sophos-anti-virus-home-edition
 
 touch ~/.bash_profile
 #ANDROID_HOME先指定
