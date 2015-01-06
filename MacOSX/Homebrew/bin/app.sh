@@ -5,13 +5,8 @@ echo install wget
 brew install wget
 echo install google-chrome
 brew cask install google-chrome
-echo 日本語対応設定
-echo -  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US'
-echo +  url 'https://download.mozilla.org/?product=firefox-latest&os=osx&lang=ja-JP-mac'
-echo に変更を行ってください
-brew cask edit firefox
-echo install firefox
-brew cask install firefox
+echo install firefox-ja
+brew cask install firefox-ja
 echo install google-japanese-ime
 brew cask install google-japanese-ime
 echo install cyberduck
