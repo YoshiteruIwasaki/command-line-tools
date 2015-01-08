@@ -5,6 +5,8 @@ echo install wget
 brew install wget
 echo install xquartz
 brew cask install xquartz
+echo install avast
+brew cask install avast
 echo install google-chrome
 brew cask install google-chrome
 echo install firefox-ja
