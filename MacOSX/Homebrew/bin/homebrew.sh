@@ -12,6 +12,6 @@ touch ~/.bash_profile
 
 #インストール先指定
 echo インストール先を/Applicationsに変更します
-echo export HOMEBREW_CASK_OPTS=¥"--appdir=/Applications¥" >> ~/.bash_profile
+echo export HOMEBREW_CASK_OPTS=\"--appdir=/Applications\" >> ~/.bash_profile
 
 source ~/.bash_profile
