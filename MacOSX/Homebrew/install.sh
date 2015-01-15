@@ -35,3 +35,7 @@ chmod 744 ./bin/*.sh
 
 # Setup VirtualBox
 ./bin/virtualbox.sh
+
+# Install sass
+./bin/sass.sh
+
