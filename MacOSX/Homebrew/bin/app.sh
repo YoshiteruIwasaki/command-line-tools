@@ -22,6 +22,8 @@ echo install android-sdk
 brew install android-sdk
 echo install app-engine-java-sdk
 brew install app-engine-java-sdk
+echo install genymotion
+brew cask install genymotion
 
 touch ~/.bash_profile
 #ANDROID_HOME先指定
