@@ -60,20 +60,20 @@ echo $HOME/Documents/aipo/GitHub
 echo =============================
 echo Java
 echo インストール済みのJRE
-echo Java SE6
+echo Java SE6 or Java SE8
 echo
 echo コンパイラ
-echo 1.6
+echo 1.6 or 1.8
 echo =============================
 echo Tomcat
 echo バージョン
-echo バージョン6.x
+echo バージョン6.x or バージョン7.x
 echo
 echo Tomcatホーム
-echo /usr/local/opt/tomcat6/libexec
+echo /usr/local/opt/tomcat6/libexec or /usr/local/opt/tomcat7/libexec
 echo
 echo JVM設定
-echo Java SE6
+echo Java SE6 or Java SE8
 echo
 echo JVMパラメータ
 echo -XX:MaxPermSize=128m -Xmx512m -Xms256m -Dsun.nio.cs.map=x-windows-iso2022jp/ISO-2022-JP
