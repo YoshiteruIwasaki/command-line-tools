@@ -8,6 +8,13 @@ mvn eclipse:add-maven-repo -Declipse.workspace=~/Documents/aipo/workspace
 echo clone aipo
 cd ~/Documents/aipo/GitHub
 git clone https://github.com/aipocom/aipo.git
+git clone https://github.com/aipocom/aipo-opensocial.git
+
+cd ~/Documents/aipo/GitHub/aipo
+mvn install
+
+cd ~/Documents/aipo/GitHub/aipo-opensocial
+mvn install
 
 #データベース作成
 echo データベースを作成します
