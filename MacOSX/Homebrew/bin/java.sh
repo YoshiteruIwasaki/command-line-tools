@@ -4,6 +4,8 @@ echo install java6
 brew cask install java6
 echo install maven2
 brew install maven2
+brew unlink maven2
+brew install maven
 echo install ant
 brew install ant
 
