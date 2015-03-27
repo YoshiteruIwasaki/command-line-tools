@@ -18,12 +18,6 @@ sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/e
 #-javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar
 sudo echo -javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar >> /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
 
-#EclipseへTomcatプラグインインストール
-wget -P ~/Downloads/ http://www.eclipsetotale.com/tomcatPlugin/tomcatPluginV331.zip
-cd ~/Downloads/
-unzip tomcatPluginV331.zip
-sudo cp ~/Downloads/com.sysdeo.eclipse.tomcat_3.3.1.jar /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/dropins/
-
 #EclipseへVelocityWebEditプラグインインストール
 wget  -P ~/Downloads/ "http://downloads.sourceforge.net/project/velocitywebedit/velocitywebedit/1.0.8/VelocityWebEdit-1.0.8.zip"
 cd ~/Downloads/
