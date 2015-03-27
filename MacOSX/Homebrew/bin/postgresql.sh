@@ -2,7 +2,7 @@
 
 echo Install postgresql
 brew rm postgresql --force
-brew install postgresql
+brew install postgresql93
 brew cask install pgadmin3
 #自動起動設定
 mkdir -p ~/Library/LaunchAgents
