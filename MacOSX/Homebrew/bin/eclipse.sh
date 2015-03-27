@@ -4,14 +4,6 @@ echo install eclipse
 brew cask install eclipse-ide
 brew cask info eclipse-ide
 
-#eclipse設定変更
-echo 先頭に以下を追記
-echo -vm
-echo /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java
-JAVA_HOME_7=/usr/libexec/java_home -v "1.7"
-sed -e "1i ${JAVA_HOME_7}/bin/java" /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
-sed -e "1i -vm" /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
-
 
 echo setup eclipse
 wget -P ~/Downloads/ http://ftp.jaist.ac.jp/pub/mergedoc/pleiades/4.4/pleiades-e4.4-ultimate_20140926.zip
@@ -60,20 +52,20 @@ echo $HOME/Documents/aipo/GitHub
 echo =============================
 echo Java
 echo インストール済みのJRE
-echo Java SE6 or Java SE8
+echo Java SE8
 echo
 echo コンパイラ
-echo 1.6 or 1.8
+echo 1.8
 echo =============================
 echo Tomcat
 echo バージョン
-echo バージョン6.x or バージョン7.x
+echo バージョン7.x
 echo
 echo Tomcatホーム
-echo /usr/local/opt/tomcat6/libexec or /usr/local/opt/tomcat7/libexec
+echo /usr/local/opt/tomcat7/libexec
 echo
 echo JVM設定
-echo Java SE6 or Java SE8
+echo Java SE8
 echo
 echo JVMパラメータ
 echo -XX:MaxPermSize=128m -Xmx512m -Xms256m -Dsun.nio.cs.map=x-windows-iso2022jp/ISO-2022-JP
