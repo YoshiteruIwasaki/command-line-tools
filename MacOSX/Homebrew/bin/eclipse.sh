@@ -6,12 +6,12 @@ brew cask info eclipse-ide
 
 
 echo setup eclipse
-wget -P ~/Downloads/ http://ftp.jaist.ac.jp/pub/mergedoc/pleiades/4.4/pleiades-e4.4-ultimate_20140926.zip
+wget -P ~/Downloads/ http://ftp.jaist.ac.jp/pub/mergedoc/pleiades/4.5/pleiades-e4.5-ultimate_20160312.zip 
 cd ~/Downloads/
-unzip pleiades-e4.4-ultimate_20140926.zip
-sudo cp -r ~/Downloads/pleiades/eclipse/dropins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/dropins/
-sudo cp -r ~/Downloads/pleiades/eclipse/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/plugins/
-sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/features/
+unzip pleiades-e4.5-ultimate_20160312.zip
+sudo cp -r ~/Downloads/pleiades/eclipse/dropins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/dropins/
+sudo cp -r ~/Downloads/pleiades/eclipse/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/plugins/
+sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/features/
 
 #eclipse設定変更
 #末尾に以下を追記
@@ -22,7 +22,7 @@ sudo echo -javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.me
 wget  -P ~/Downloads/ "http://downloads.sourceforge.net/project/velocitywebedit/velocitywebedit/1.0.8/VelocityWebEdit-1.0.8.zip"
 cd ~/Downloads/
 unzip VelocityWebEdit-1.0.8.zip
-sudo cp -r ~/Downloads/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.4.1/eclipse/plugins/
+sudo cp -r ~/Downloads/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/plugins/
 
 echo Eclipseからアップデートサイトを設定する形で以下をインストールしてください
 echo
