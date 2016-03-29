@@ -16,13 +16,13 @@ sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/e
 #eclipse設定変更
 #末尾に以下を追記
 #-javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar
-sudo echo -javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar >> /Applications/Eclipse.app/Contents/MacOS/eclipse.ini
+sudo echo -javaagent:../../../dropins/MergeDoc/eclipse/plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar >> /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/Eclipse.app/Contents/Eclipse/eclipse.ini
 
 #EclipseへVelocityWebEditプラグインインストール
 wget  -P ~/Downloads/ "http://downloads.sourceforge.net/project/velocitywebedit/velocitywebedit/1.0.8/VelocityWebEdit-1.0.8.zip"
 cd ~/Downloads/
 unzip VelocityWebEdit-1.0.8.zip
-sudo cp -r ~/Downloads/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/plugins/
+sudo cp -r ~/Downloads/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/Eclipse.app/Contents/Eclipse/plugins/
 
 echo Eclipseからアップデートサイトを設定する形で以下をインストールしてください
 echo
