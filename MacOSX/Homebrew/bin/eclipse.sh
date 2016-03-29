@@ -9,9 +9,9 @@ echo setup eclipse
 wget -P ~/Downloads/ http://ftp.jaist.ac.jp/pub/mergedoc/pleiades/4.5/pleiades-e4.5-ultimate_20160312.zip 
 cd ~/Downloads/
 unzip pleiades-e4.5-ultimate_20160312.zip
-sudo cp -r ~/Downloads/pleiades/eclipse/dropins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/dropins/
-sudo cp -r ~/Downloads/pleiades/eclipse/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/plugins/
-sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/eclipse/features/
+sudo cp -r ~/Downloads/pleiades/eclipse/dropins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/Eclipse.app/Contents/Eclipse/dropins/
+sudo cp -r ~/Downloads/pleiades/eclipse/plugins/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/Eclipse.app/Contents/Eclipse/plugins/
+sudo cp -r ~/Downloads/pleiades/eclipse/features/* /opt/homebrew-cask/Caskroom/eclipse-ide/4.5.2/Eclipse.app/Contents/Eclipse/features/
 
 #eclipse設定変更
 #末尾に以下を追記
